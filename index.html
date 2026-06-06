@@ -1,291 +1,855 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="專業微整形與美學治療 - 蔡宛君醫師，提供電波音波拉提、雷射光療、微整注射等專業服務。">
-    <meta name="keywords" content="微整形, 美學治療, 電波拉提, 雷射光療, 微整注射, 蔡宛君醫師">
-    <meta name="author" content="Dr. Meg">
-    <title>Dr. Meg's Profile</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Primary SEO -->
+    <title>蔡宛君醫師 ｜ 專業微整形與美學治療</title>
+    <meta name="description" content="蔡宛君醫師（Dr. Meg）專精微整形與美學治療，提供電波音波拉提、雷射光療、微整注射、臉部線雕拉提與良性腫塊切除。服務據點：教主醫美診所、麗式診所。">
+    <meta name="keywords" content="蔡宛君醫師, Dr. Meg, 微整形, 美學治療, 電波拉提, 音波拉提, 雷射光療, 微整注射, 玻尿酸, 肉毒, 線雕, 教主醫美診所, 麗式診所">
+    <meta name="author" content="蔡宛君醫師 Dr. Meg">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#2b2b2b">
+    <link rel="canonical" href="https://doctortwc1111.web.app/">
+
+    <!-- Favicon (inline SVG, brand mark) -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232b2b2b'/%3E%3Ctext x='16' y='23' font-family='serif' font-size='19' fill='%23b08d57' text-anchor='middle'%3E蔡%3C/text%3E%3C/svg%3E">
+
+    <!-- Open Graph (Facebook / LINE / IG share) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="蔡宛君醫師 Dr. Meg">
+    <meta property="og:title" content="蔡宛君醫師 ｜ 專業微整形與美學治療">
+    <meta property="og:description" content="專精微整形與美學治療，提供電波音波拉提、雷射光療、微整注射、臉部線雕拉提與良性腫塊切除。">
+    <meta property="og:url" content="https://doctortwc1111.web.app/">
+    <meta property="og:image" content="https://doctortwc1111.web.app/Pictures/20211108-118.jpg">
+    <meta property="og:image:alt" content="蔡宛君醫師">
+    <meta property="og:locale" content="zh_TW">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="蔡宛君醫師 ｜ 專業微整形與美學治療">
+    <meta name="twitter:description" content="專精微整形與美學治療，提供電波音波拉提、雷射光療、微整注射、臉部線雕拉提與良性腫塊切除。">
+    <meta name="twitter:image" content="https://doctortwc1111.web.app/Pictures/20211108-118.jpg">
+
+    <!-- Structured data: Physician -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "name": "蔡宛君醫師",
+      "alternateName": "Dr. Meg",
+      "url": "https://doctortwc1111.web.app/",
+      "image": "https://doctortwc1111.web.app/Pictures/20211108-118.jpg",
+      "description": "蔡宛君醫師專精微整形與美學治療，提供電波音波拉提、雷射光療、微整注射、臉部線雕拉提與良性腫塊切除。",
+      "medicalSpecialty": ["PlasticSurgery", "Dermatology"],
+      "knowsAbout": ["電波音波拉提", "雷射光療", "微整注射", "臉部線雕拉提", "良性腫塊切除"],
+      "sameAs": [
+        "https://www.instagram.com/dr.megtsai/"
+      ],
+      "worksFor": [
+        { "@type": "MedicalClinic", "name": "教主醫美診所" },
+        { "@type": "MedicalClinic", "name": "麗式診所" }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
-            body {
-                font-family: 'Arial', sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f9f9f9;
-                color: #333;
-            }
+        :root {
+            --ink: #2b2b2b;
+            --ink-soft: #5f5a53;
+            --bg: #ffffff;
+            --bg-alt: #f7f3ed;
+            --line: #e7e0d5;
+            --gold: #b08d57;
+            --gold-dark: #94703f;
+            --shadow: 0 18px 40px rgba(43, 43, 43, 0.08);
+            --serif: 'Noto Serif TC', 'Songti TC', serif;
+            --sans: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+        }
 
-            header {
-                background-color: #6c757d;
-                color: white;
-                padding: 1rem;
-                text-align: center;
-            }
+        * { box-sizing: border-box; }
 
-            main {
-                padding: 2rem;
-            }
+        html { scroll-behavior: smooth; }
 
-            section {
-                margin-bottom: 2rem;
-                background: white;
-                padding: 1.5rem;
-                border-radius: 8px;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            }
+        body {
+            font-family: var(--sans);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            color: var(--ink);
+            font-weight: 400;
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
 
-            h1, h2, h3 {
-                color: #6c757d;
-            }
+        img { max-width: 100%; display: block; }
 
-            ul {
-                list-style-type: none;
-                padding: 0;
-            }
+        a { text-decoration: none; color: inherit; }
 
-            ul li {
-                margin-bottom: 0.5rem;
-            }
+        h1, h2, h3 { font-family: var(--serif); font-weight: 600; letter-spacing: 0.02em; }
 
-            .certificate-gallery img {
-                border: 1px solid #ddd;
-                border-radius: 8px;
-                transition: transform 0.3s, z-index 0.3s;
-                position: relative;
-                z-index: 1;
-            }
+        .wrap { max-width: 1140px; margin: 0 auto; padding: 0 1.5rem; }
 
-            .certificate-gallery img:hover {
-                transform: scale(1.1);
-                z-index: 10;
-            }
+        /* ---------- Header / Nav ---------- */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: saturate(180%) blur(10px);
+            border-bottom: 1px solid var(--line);
+        }
 
-            button {
-                background-color: #6c757d;
-                color: white;
-                padding: 0.5rem 1rem;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-                transition: background-color 0.3s;
-            }
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 72px;
+        }
 
-            button:hover {
-                background-color: #5a6268;
-            }
+        .brand {
+            font-family: var(--serif);
+            font-size: 1.35rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            color: var(--ink);
+        }
 
-            footer {
-                text-align: center;
-                padding: 1rem;
-                background-color: #6c757d;
-                color: white;
-            }
+        .brand small {
+            display: block;
+            font-family: var(--sans);
+            font-size: 0.62rem;
+            letter-spacing: 0.35em;
+            color: var(--gold);
+            font-weight: 500;
+            margin-top: 2px;
+        }
 
-            table {
-                width: 100%;
-                border-collapse: collapse;
-                margin-top: 1rem;
-            }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
 
-            th, td {
-                border: 1px solid #ddd;
-                padding: 0.5rem;
-                text-align: center;
-            }
+        .nav-links a {
+            font-size: 0.95rem;
+            color: var(--ink-soft);
+            position: relative;
+            padding: 4px 0;
+            transition: color 0.25s;
+        }
 
-            th {
-                background-color: #6c757d;
-                color: white;
-            }
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 0;
+            height: 1.5px;
+            background: var(--gold);
+            transition: width 0.25s ease;
+        }
 
-            @media (max-width: 768px) {
-                body {
-                    font-size: 14px;
-                }
+        .nav-links a:hover { color: var(--ink); }
+        .nav-links a:hover::after { width: 100%; }
 
-                header h1 {
-                    font-size: 2rem;
-                }
+        .nav-right { display: flex; align-items: center; gap: 0.9rem; }
 
-                .certificate-gallery img {
-                    max-width: 40%;
-                }
+        .nav-ig {
+            width: 38px;
+            height: 38px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 1px solid var(--line);
+            color: var(--ink-soft);
+            transition: all 0.25s;
+            flex: none;
+        }
 
-                section {
-                    padding: 1rem;
-                }
-            }
+        .nav-ig:hover { background: var(--gold); border-color: var(--gold); color: #fff; transform: translateY(-2px); }
 
-            .certificate-gallery img {
-                position: relative;
-                z-index: 1;
-                transition: transform 0.3s, z-index 0.3s;
-            }
+        .nav-ig svg { width: 20px; height: 20px; fill: currentColor; }
 
-            .certificate-gallery img:hover {
-                transform: scale(1.1);
-                z-index: 10;
-            }
+        .nav-cta {
+            font-size: 0.9rem;
+            padding: 0.55rem 1.3rem;
+            border: 1px solid var(--gold);
+            border-radius: 999px;
+            color: var(--gold-dark);
+            letter-spacing: 0.05em;
+            transition: all 0.25s;
+            white-space: nowrap;
+        }
 
-            a {
-                text-decoration: none;
-                color: #6c757d;
-            }
+        .nav-cta:hover { background: var(--gold); color: #fff; }
 
-            a:hover {
-                color: #343a40;
-            }
-        </style>
+        /* ---------- Hero ---------- */
+        .hero {
+            background: linear-gradient(180deg, var(--bg-alt) 0%, #fff 100%);
+            padding: 5rem 0 4.5rem;
+        }
+
+        .hero-inner {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            align-items: center;
+            gap: 4rem;
+        }
+
+        .hero-eyebrow {
+            font-size: 0.78rem;
+            letter-spacing: 0.4em;
+            color: var(--gold);
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 1.2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            line-height: 1.3;
+            margin: 0 0 1.4rem;
+            color: var(--ink);
+        }
+
+        .hero h1 span { color: var(--gold-dark); }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--ink-soft);
+            max-width: 30rem;
+            margin: 0 0 2.2rem;
+        }
+
+        .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+        .btn-primary {
+            background: var(--ink);
+            color: #fff;
+            padding: 0.85rem 2rem;
+            border-radius: 999px;
+            font-size: 0.98rem;
+            letter-spacing: 0.05em;
+            transition: all 0.25s;
+        }
+
+        .btn-primary:hover { background: var(--gold-dark); transform: translateY(-2px); }
+
+        .btn-ghost {
+            padding: 0.85rem 2rem;
+            border-radius: 999px;
+            font-size: 0.98rem;
+            color: var(--ink);
+            border: 1px solid var(--line);
+            transition: all 0.25s;
+        }
+
+        .btn-ghost:hover { border-color: var(--gold); color: var(--gold-dark); }
+
+        .hero-photo {
+            position: relative;
+        }
+
+        .hero-photo img {
+            width: 100%;
+            border-radius: 14px;
+            box-shadow: var(--shadow);
+        }
+
+        .hero-photo::before {
+            content: "";
+            position: absolute;
+            inset: 18px -18px -18px 18px;
+            border: 1px solid var(--gold);
+            border-radius: 14px;
+            z-index: -1;
+        }
+
+        /* ---------- Sections ---------- */
+        section.block { padding: 5rem 0; }
+        section.block.alt { background: var(--bg-alt); }
+
+        .section-head { text-align: center; margin-bottom: 3rem; }
+
+        .section-head .eyebrow {
+            font-size: 0.74rem;
+            letter-spacing: 0.4em;
+            color: var(--gold);
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .section-head h2 {
+            font-size: 2.1rem;
+            margin: 0.7rem 0 0;
+            color: var(--ink);
+        }
+
+        .section-head p {
+            color: var(--ink-soft);
+            margin: 0.8rem auto 0;
+            max-width: 36rem;
+        }
+
+        /* ---------- About / credentials ---------- */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+        }
+
+        .cred-card {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 2.2rem;
+        }
+
+        .cred-card h3 {
+            font-size: 1.4rem;
+            margin: 0 0 1.2rem;
+            color: var(--ink);
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .cred-card h3::before {
+            content: "";
+            width: 28px;
+            height: 1.5px;
+            background: var(--gold);
+        }
+
+        .cred-card ul { list-style: none; margin: 0; padding: 0; }
+
+        .cred-card li {
+            padding: 0.5rem 0 0.5rem 1.4rem;
+            position: relative;
+            color: var(--ink-soft);
+            border-bottom: 1px dashed var(--line);
+        }
+
+        .cred-card li:last-child { border-bottom: none; }
+
+        .cred-card li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 1.05rem;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--gold);
+        }
+
+        /* ---------- Services ---------- */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.6rem;
+        }
+
+        .service-card {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 2.2rem 1.8rem;
+            transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow);
+            border-color: transparent;
+        }
+
+        .service-card .num {
+            font-family: var(--serif);
+            font-size: 0.95rem;
+            color: var(--gold);
+            letter-spacing: 0.1em;
+        }
+
+        .service-card h3 {
+            font-size: 1.4rem;
+            margin: 0.5rem 0 0.6rem;
+            color: var(--ink);
+        }
+
+        .service-card .lead { color: var(--ink-soft); margin: 0 0 1rem; font-size: 0.98rem; }
+
+        .service-card ul { list-style: none; margin: 0; padding: 0; }
+
+        .service-card li {
+            font-size: 0.95rem;
+            color: var(--ink-soft);
+            padding: 0.3rem 0 0.3rem 1.5rem;
+            position: relative;
+        }
+
+        .service-card li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        /* ---------- Clinics ---------- */
+        .clinics {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.6rem;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .clinic-card {
+            display: flex;
+            align-items: center;
+            gap: 1.1rem;
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 1.6rem 1.8rem;
+            transition: transform 0.25s, box-shadow 0.25s;
+        }
+
+        .clinic-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+
+        .clinic-card .pin {
+            width: 46px;
+            height: 46px;
+            flex: none;
+            border-radius: 50%;
+            background: var(--bg-alt);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .clinic-card .pin img { width: 22px; height: 22px; }
+
+        .clinic-info { display: flex; flex-direction: column; gap: 0.7rem; }
+
+        .clinic-info .name { font-size: 1.2rem; font-family: var(--serif); color: var(--ink); }
+
+        .clinic-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+
+        .clinic-actions a {
+            font-size: 0.85rem;
+            letter-spacing: 0.04em;
+            padding: 0.4rem 1rem;
+            border-radius: 999px;
+            border: 1px solid var(--line);
+            color: var(--ink-soft);
+            transition: all 0.25s;
+        }
+
+        .clinic-actions a:hover { border-color: var(--gold); color: var(--gold-dark); }
+
+        .clinic-actions a.book-link {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: #fff;
+        }
+
+        .clinic-actions a.book-link:hover { background: var(--gold-dark); border-color: var(--gold-dark); color: #fff; }
+
+        /* ---------- Gallery ---------- */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.2rem;
+        }
+
+        .gallery a {
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s;
+        }
+
+        .gallery a:hover img { transform: scale(1.06); }
+
+        /* ---------- Media ---------- */
+        .media-group { margin-bottom: 2.6rem; }
+
+        .media-label {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-family: var(--serif);
+            font-size: 1.25rem;
+            color: var(--ink);
+            margin-bottom: 1.2rem;
+        }
+
+        .media-label img { width: 1.6rem; height: auto; }
+
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.4rem;
+        }
+
+        .video-frame {
+            position: relative;
+            padding-top: 56.25%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            background: #000;
+        }
+
+        .video-frame iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* ---------- Footer ---------- */
+        footer {
+            background: var(--ink);
+            color: #cfc8bd;
+            padding: 3rem 0 2rem;
+            text-align: center;
+        }
+
+        footer .brand-f {
+            font-family: var(--serif);
+            font-size: 1.5rem;
+            color: #fff;
+            letter-spacing: 0.1em;
+        }
+
+        footer .brand-f small {
+            display: block;
+            font-family: var(--sans);
+            font-size: 0.62rem;
+            letter-spacing: 0.35em;
+            color: var(--gold);
+            margin-top: 4px;
+        }
+
+        footer .f-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.8rem;
+            margin: 1.6rem 0;
+            flex-wrap: wrap;
+        }
+
+        footer .f-links a { color: #cfc8bd; font-size: 0.92rem; transition: color 0.25s; }
+        footer .f-links a:hover { color: #fff; }
+
+        footer .f-social {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1.6rem 0 0.4rem;
+        }
+
+        footer .f-social a {
+            width: 42px;
+            height: 42px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            color: #cfc8bd;
+            transition: all 0.25s;
+        }
+
+        footer .f-social a:hover { background: var(--gold); border-color: var(--gold); color: #fff; transform: translateY(-3px); }
+
+        footer .f-social svg { width: 20px; height: 20px; fill: currentColor; }
+
+        footer .copyright { font-size: 0.82rem; color: #8d867b; margin-top: 1.4rem; }
+
+        /* ---------- Responsive ---------- */
+        @media (max-width: 920px) {
+            .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+            .hero-photo { max-width: 420px; margin: 0 auto; }
+            .hero h1 { font-size: 2.4rem; }
+            .services { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            section.block { padding: 3.5rem 0; }
+            .hero { padding: 3.5rem 0; }
+            .about-grid { grid-template-columns: 1fr; }
+            .services { grid-template-columns: 1fr; }
+            .clinics { grid-template-columns: 1fr; }
+            .gallery { grid-template-columns: repeat(2, 1fr); }
+            .media-grid { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 <body>
+
+    <!-- ============ Header ============ -->
     <header>
-        <h1 style="font-size: 2.5rem; text-align: center; margin: 1rem 0; color: white;">專業微整形與美學治療 - 蔡宛君醫師</h1>
-    </header>
-    <main>
-        <section id="biography" style="display: flex; align-items: flex-start; justify-content: center; gap: 2rem;">
-            <div style="flex: 1; text-align: center;">
-                <h2 style="font-size: 2rem; margin-bottom: 1rem;">蔡宛君 醫師</h2>
-                <img src="Pictures/20211108-118.jpg" alt="Dr. Meg's Photo" style="max-width: 50%; height: auto; border-radius: 8px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);">
+        <div class="wrap nav">
+            <a href="#top" class="brand">蔡宛君 醫師<small>DR. MEG</small></a>
+            <ul class="nav-links">
+                <li><a href="#about">關於醫師</a></li>
+                <li><a href="#services">主治專長</a></li>
+                <li><a href="#clinics">服務院所</a></li>
+                <li><a href="#media">媒體影音</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="https://www.instagram.com/dr.megtsai/" target="_blank" rel="noopener" class="nav-ig" aria-label="Instagram @dr.megtsai" title="追蹤 Instagram @dr.megtsai">
+                    <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16Zm0 1.62c-3.15 0-3.5.01-4.74.07-1.14.05-1.76.24-2.17.4-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.16.41-.35 1.03-.4 2.17-.06 1.24-.07 1.59-.07 4.74s.01 3.5.07 4.74c.05 1.14.24 1.76.4 2.17.21.55.47.94.88 1.35.41.41.8.67 1.35.88.41.16 1.03.35 2.17.4 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c1.14-.05 1.76-.24 2.17-.4.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.16-.41.35-1.03.4-2.17.06-1.24.07-1.59.07-4.74s-.01-3.5-.07-4.74c-.05-1.14-.24-1.76-.4-2.17a3.6 3.6 0 0 0-.88-1.35 3.6 3.6 0 0 0-1.35-.88c-.41-.16-1.03-.35-2.17-.4-1.24-.06-1.59-.07-4.74-.07Zm0 2.76a5.7 5.7 0 1 1 0 11.4 5.7 5.7 0 0 1 0-11.4Zm0 1.62a4.08 4.08 0 1 0 0 8.16 4.08 4.08 0 0 0 0-8.16Zm5.88-1.18a1.33 1.33 0 1 1-2.66 0 1.33 1.33 0 0 1 2.66 0Z"/></svg>
+                </a>
+                <a href="#clinics" class="nav-cta">立即預約</a>
             </div>
-            <div style="flex: 1;">
-                <h2 style="font-size: 2rem; margin-bottom: 1rem;">主治專長</h2>
-                <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
-                    <div style="flex: 1; min-width: 45%;">
-                        <h3 style="font-size: 1.8rem;">🔹 電波音波拉提</h3>
-                        <p style="font-size: 1.5rem;">高能量精準傳導至肌膚深層</p>
-                        <ul style="font-size: 1.5rem;">
-                            <li>✔ 緊緻拉提</li>
-                            <li>✔ 淡化細紋</li>
-                            <li>✔ 自然回春</li>
-                        </ul>
+        </div>
+    </header>
+
+    <!-- ============ Hero ============ -->
+    <section class="hero" id="top">
+        <div class="wrap hero-inner">
+            <div class="hero-text">
+                <div class="hero-eyebrow">Aesthetic Medicine</div>
+                <h1>專業微整形<br>與<span>美學治療</span></h1>
+                <p>以醫學專業與細緻美感，為每一位顧客量身打造自然、緊緻、回春的療程，讓美麗由內而外自然展現。</p>
+                <div class="hero-actions">
+                    <a href="#clinics" class="btn-primary">立即預約掛號</a>
+                    <a href="#services" class="btn-ghost">了解主治專長</a>
+                </div>
+            </div>
+            <div class="hero-photo">
+                <img src="Pictures/蔡宛君-醫師.webp" alt="蔡宛君醫師">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ About / Credentials ============ -->
+    <section class="block" id="about">
+        <div class="wrap">
+            <div class="section-head">
+                <div class="eyebrow">About the Doctor</div>
+                <h2>關於蔡宛君醫師</h2>
+                <p>顏面整形重建外科專科背景，結合美容醫學專業，提供安全且自然的治療成果。</p>
+            </div>
+            <div class="about-grid">
+                <div class="cred-card">
+                    <h3>學歷與經歷</h3>
+                    <ul>
+                        <li>台北醫學大學醫學系</li>
+                        <li>三軍總醫院主治醫師</li>
+                        <li>台灣顏面整形重建外科專科醫師</li>
+                        <li>中華民國美容醫學學會會員</li>
+                        <li>教育部定講師</li>
+                    </ul>
+                </div>
+                <div class="cred-card">
+                    <h3>專業認證</h3>
+                    <ul>
+                        <li>Sculptra 原廠認證醫師</li>
+                        <li>Ellanse 洢蓮絲認證醫師</li>
+                        <li>Juvederm® 喬雅登認證醫師</li>
+                        <li>Belkyra 倍克脂認證醫師</li>
+                        <li>DermaFiller® 德瑪芙認證醫師</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ Services ============ -->
+    <section class="block alt" id="services">
+        <div class="wrap">
+            <div class="section-head">
+                <div class="eyebrow">Specialties</div>
+                <h2>主治專長</h2>
+                <p>從拉提、光療到注射與線雕，提供全方位的臉部美學療程規劃。</p>
+            </div>
+            <div class="services">
+                <div class="service-card">
+                    <span class="num">01</span>
+                    <h3>電波音波拉提</h3>
+                    <p class="lead">高能量精準傳導至肌膚深層</p>
+                    <ul>
+                        <li>緊緻拉提</li>
+                        <li>淡化細紋</li>
+                        <li>自然回春</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <span class="num">02</span>
+                    <h3>雷射光療</h3>
+                    <p class="lead">量身打造專屬光學療程</p>
+                    <ul>
+                        <li>斑點淡化</li>
+                        <li>改善痘疤</li>
+                        <li>膚色勻亮</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <span class="num">03</span>
+                    <h3>微整注射</h3>
+                    <p class="lead">小改變，大不同</p>
+                    <ul>
+                        <li>玻尿酸 / 肉毒 / 膠原增生劑</li>
+                        <li>修飾五官比例</li>
+                        <li>輪廓自然立體</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <span class="num">04</span>
+                    <h3>臉部線雕拉提</h3>
+                    <p class="lead">立體雕塑，緊緻有感</p>
+                    <ul>
+                        <li>蛋白線即時拉提</li>
+                        <li>長效刺激膠原新生</li>
+                        <li>輪廓線條明顯提升</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <span class="num">05</span>
+                    <h3>良性腫塊切除</h3>
+                    <p class="lead">專業評估，安全細緻</p>
+                    <ul>
+                        <li>皮膚良性腫塊切除</li>
+                        <li>美觀縫合、恢復自然</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ Clinics ============ -->
+    <section class="block" id="clinics">
+        <div class="wrap">
+            <div class="section-head">
+                <div class="eyebrow">Locations</div>
+                <h2>服務醫療院所</h2>
+                <p>點擊診所卡片即可開啟 Google 地圖導航。</p>
+            </div>
+            <div class="clinics">
+                <div class="clinic-card">
+                    <span class="pin"><img src="Pictures/map.png" alt="地圖"></span>
+                    <div class="clinic-info">
+                        <span class="name">教主醫美診所</span>
+                        <div class="clinic-actions">
+                            <a href="https://maps.app.goo.gl/8ta683aonV5ETFaL8" target="_blank" rel="noopener">Google 地圖 ↗</a>
+                        </div>
                     </div>
-                    <div style="flex: 1; min-width: 45%;">
-                        <h3 style="font-size: 1.8rem;">🔹 雷射光療</h3>
-                        <p style="font-size: 1.5rem;">量身打造專屬光學療程</p>
-                        <ul style="font-size: 1.5rem;">
-                            <li>✔ 斑點淡化</li>
-                            <li>✔ 改善痘疤</li>
-                            <li>✔ 膚色勻亮</li>
-                        </ul>
-                    </div>
-                    <div style="flex: 1; min-width: 45%;">
-                        <h3 style="font-size: 1.8rem;">🔹 微整注射</h3>
-                        <p style="font-size: 1.5rem;">小改變，大不同</p>
-                        <ul style="font-size: 1.5rem;">
-                            <li>✔ 玻尿酸 / 肉毒 / 膠原增生劑</li>
-                            <li>✔ 修飾五官比例</li>
-                            <li>✔ 輪廓自然立體</li>
-                        </ul>
-                    </div>
-                    <div style="flex: 1; min-width: 45%;">
-                        <h3 style="font-size: 1.8rem;">🔹 臉部線雕拉提</h3>
-                        <p style="font-size: 1.5rem;">立體雕塑，緊緻有感</p>
-                        <ul style="font-size: 1.5rem;">
-                            <li>✔ 蛋白線即時拉提</li>
-                            <li>✔ 長效刺激膠原新生</li>
-                            <li>✔ 輪廓線條明顯提升</li>
-                        </ul>
-                    </div>
-                    <div style="flex: 1; min-width: 45%;">
-                        <h3 style="font-size: 1.8rem;">🔹 良性腫塊切除</h3>
-                        <p style="font-size: 1.5rem;">專業評估，安全細緻</p>
-                        <ul style="font-size: 1.5rem;">
-                            <li>✔ 皮膚良性腫塊切除</li>
-                            <li>✔ 美觀縫合、恢復自然</li>
-                        </ul>
+                </div>
+                <div class="clinic-card">
+                    <span class="pin"><img src="Pictures/map.png" alt="地圖"></span>
+                    <div class="clinic-info">
+                        <span class="name">麗式診所</span>
+                        <div class="clinic-actions">
+                            <a href="https://maps.app.goo.gl/gtnpgM74G9qzUSLfA" target="_blank" rel="noopener">Google 地圖 ↗</a>
+                            <a class="book-link" href="https://www.liusmed.com/home/%E7%B7%9A%E4%B8%8A%E6%8E%9B%E8%99%9F/" target="_blank" rel="noopener">線上掛號 ↗</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="achievements" style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem;">
-            <div>
-                <h3 style="font-size: 1.8rem;">學歷</h3>
-                <ul style="list-style: none; padding: 0; font-size: 1.5rem;">
-                    <li>台北醫學大學醫系</li>
-                    <li>三軍總醫院主治醫師</li>
-                    <li>台灣顏面整形重建外科專科醫師</li>
-                    <li>中華民國美容醫學學會會員</li>
-                    <li>教育部定講師</li>
-                </ul>
+        </div>
+    </section>
+
+    <!-- ============ Gallery ============ -->
+    <section class="block alt" id="gallery">
+        <div class="wrap">
+            <div class="section-head">
+                <div class="eyebrow">Certificates</div>
+                <h2>專業證書</h2>
+                <p>原廠認證與專業資格，是安心治療的基礎。</p>
             </div>
-            <div>
-                <h3 style="font-size: 1.8rem;">專業認證</h3>
-                <ul style="list-style: none; padding: 0; font-size: 1.5rem;">
-                    <li>Sculptra原廠認證醫師</li>
-                    <li>Ellanse洢蓮絲認證醫師</li>
-                    <li>Juvederm®喬雅登認證醫師</li>
-                    <li>Belkyra倍克脂認證醫師</li>
-                    <li>DermaFiller®德瑪芙認證醫師</li>
-                </ul>
+            <div class="gallery">
+                <a href="Pictures/蔡宛君-證書版面-01.webp" target="_blank" rel="noopener"><img src="Pictures/蔡宛君-證書版面-01.webp" alt="專業證書 1"></a>
+                <a href="Pictures/蔡宛君-證書版面-02.webp" target="_blank" rel="noopener"><img src="Pictures/蔡宛君-證書版面-02.webp" alt="專業證書 2"></a>
+                <a href="Pictures/蔡宛君-證書版面-03.webp" target="_blank" rel="noopener"><img src="Pictures/蔡宛君-證書版面-03.webp" alt="專業證書 3"></a>
+                <a href="Pictures/蔡宛君-證書版面-04.webp" target="_blank" rel="noopener"><img src="Pictures/蔡宛君-證書版面-04.webp" alt="專業證書 4"></a>
             </div>
-        </section>
-        <section id="specialties" style="text-align: center; margin-top: 2rem;">
-            <h2 style="font-size: 2rem; margin-bottom: 1rem;">服務醫療院所</h2>
-            <div style="display: flex; justify-content: center; gap: 2rem;">
-                <a href="https://maps.app.goo.gl/8ta683aonV5ETFaL8" target="_blank" style="font-size: 1.5rem; color: #6c757d; text-decoration: none;">
-                    <img src="Pictures/map.png" alt="Google Map Icon" style="width: 2.0rem; height: 2.0rem; vertical-align: middle;"> 教主醫美診所
-                </a>
-                <a href="https://maps.app.goo.gl/gtnpgM74G9qzUSLfA" target="_blank" style="font-size: 1.5rem; color: #6c757d; text-decoration: none;">
-                    <img src="Pictures/map.png" alt="Google Map Icon" style="width: 2.0rem; height: 2.0rem; vertical-align: middle;"> 麗式診所
-                </a>
-                <a href="https://maps.app.goo.gl/5yVq7FiokDuU2n4q7" target="_blank" style="font-size: 1.5rem; color: #6c757d; text-decoration: none;">
-                    <img src="Pictures/map.png" alt="Google Map Icon" style="width: 2.0rem; height: 2.0rem; vertical-align: middle;"> 霍普金斯診所
-                </a>
-                <a href="https://maps.app.goo.gl/Uofst5twWvCHAfF9A" target="_blank" style="font-size: 1.5rem; color: #6c757d; text-decoration: none;">
-                    <img src="Pictures/map.png" alt="Google Map Icon" style="width: 2.0rem; height: 2.0rem; vertical-align: middle;"> 台北美麗線時尚診所
-                </a>
+        </div>
+    </section>
+
+    <!-- ============ Media ============ -->
+    <section class="block" id="media">
+        <div class="wrap">
+            <div class="section-head">
+                <div class="eyebrow">Media</div>
+                <h2>媒體影音</h2>
+                <p>更多衛教與療程分享，歡迎追蹤觀看。</p>
             </div>
-        </section>
-        <section id="gallery" style="text-align: center; margin-top: 2rem;">
-            <h2>Gallery</h2>
-            <div style="display: flex; overflow-x: auto; gap: 1rem; padding: 1rem; white-space: nowrap;" class="certificate-gallery">
-                <!-- First row of images -->
-                <img src="Pictures/IMG_9955.JPG" alt="Certificate 1" style="max-width: 20%; height: auto;">
-                <img src="Pictures/IMG_9975.JPG" alt="Certificate 2" style="max-width: 20%; height: auto;">
-                <img src="Pictures/IMG_9979.JPG" alt="Certificate 3" style="max-width: 20%; height: auto;">
-                <img src="Pictures/IMG_9980.JPG" alt="Certificate 4" style="max-width: 20%; height: auto;">
-                <img src="Pictures/IMG_9986.JPG" alt="Certificate 5" style="max-width: 20%; height: auto;">
-                <img src="Pictures/IMG_9987.JPG" alt="Certificate 6" style="max-width: 20%; height: auto;">
-                <img src="Pictures/IMG_9989.JPG" alt="Certificate 7" style="max-width: 20%; height: auto;">
-                <img src="Pictures/IMG_9991.JPG" alt="Certificate 8" style="max-width: 20%; height: auto;">
-                <img src="Pictures/IMG_9994.JPG" alt="Certificate 9" style="max-width: 20%; height: auto;">
+
+            <div class="media-group">
+                <div class="media-label">
+                    <img src="Pictures/Youtube_logo.png" alt="YouTube"> YouTube
+                </div>
+                <div class="media-grid">
+                    <div class="video-frame">
+                        <iframe src="https://www.youtube.com/embed/Vui5bCpshk8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
-            <div style="display: flex; overflow-x: auto; gap: 1rem; padding: 1rem; white-space: nowrap;" class="certificate-gallery">
-                <!-- Second row of rotated images -->
-                <img src="Pictures/IMG_0035.JPG" alt="Certificate 1" style="max-width: 20%; height: auto; transform: rotate(90deg);">
-                <img src="Pictures/IMG_0310.JPG" alt="Certificate 2" style="max-width: 20%; height: auto; transform: rotate(90deg);">
-                <img src="Pictures/IMG_2155.JPG" alt="Certificate 3" style="max-width: 20%; height: auto; transform: rotate(90deg);">
-                <img src="Pictures/IMG_9954.JPG" alt="Certificate 4" style="max-width: 20%; height: auto; transform: rotate(90deg);">
-                <img src="Pictures/IMG_9978.JPG" alt="Certificate 5" style="max-width: 20%; height: auto; transform: rotate(90deg);">
-                <img src="Pictures/IMG_9981.JPG" alt="Certificate 6" style="max-width: 20%; height: auto; transform: rotate(90deg);">
-                <img src="Pictures/IMG_9982.JPG" alt="Certificate 7" style="max-width: 20%; height: auto; transform: rotate(90deg);">
-                <img src="Pictures/IMG_9984.JPG" alt="Certificate 8" style="max-width: 20%; height: auto; transform: rotate(90deg);">
-                <img src="Pictures/IMG_9990.JPG" alt="Certificate 9" style="max-width: 20%; height: auto; transform: rotate(90deg);">
-                <img src="Pictures/IMG_9992.JPG" alt="Certificate 10" style="max-width: 20%; height: auto; transform: rotate(90deg);">
-                <img src="Pictures/IMG_9993.JPG" alt="Certificate 11" style="max-width: 20%; height: auto; transform: rotate(90deg);">
-                <img src="Pictures/IMG_9995.JPG" alt="Certificate 12" style="max-width: 20%; height: auto; transform: rotate(90deg);">
+
+            <div class="media-group">
+                <div class="media-label">
+                    <img src="Pictures/facebook.png" alt="Facebook"> Facebook
+                </div>
+                <div class="media-grid">
+                    <div class="video-frame">
+                        <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/watch/?v=1327428935140971&show_text=false" scrolling="no" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                    <div class="video-frame">
+                        <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/watch/?v=1466067274370668&show_text=false" scrolling="no" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                    <div class="video-frame">
+                        <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/watch/?v=1790635694828562&show_text=false" scrolling="no" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                    <div class="video-frame">
+                        <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/watch/?v=2004496397044489&show_text=false" scrolling="no" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section id="Youtube-video">
-            <h2>
-                <img src="Pictures/Youtube_logo.png" alt="YouTube Logo" style="width: 2rem; height: auto; vertical-align: middle;"> Youtube Video
-            </h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Vui5bCpshk8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
-        <section id="facebook-video">
-            <h2>
-                <img src="Pictures/facebook.png" alt="Facebook Logo" style="width: 2rem; height: auto; vertical-align: middle;"> Facebook Video
-            </h2>
-            <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/watch/?v=1327428935140971" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/watch/?v=1466067274370668" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/watch/?v=1790635694828562" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/watch/?v=2004496397044489" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- ============ Footer ============ -->
     <footer>
-        <p>&copy; 2025 Dr. Meg's Profile</p>
+        <div class="wrap">
+            <div class="brand-f">蔡宛君 醫師<small>DR. MEG</small></div>
+            <div class="f-links">
+                <a href="#about">關於醫師</a>
+                <a href="#services">主治專長</a>
+                <a href="#clinics">服務院所</a>
+                <a href="#media">媒體影音</a>
+            </div>
+            <div class="f-social">
+                <a href="https://www.instagram.com/dr.megtsai/" target="_blank" rel="noopener" aria-label="Instagram @dr.megtsai" title="Instagram @dr.megtsai">
+                    <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16Zm0 1.62c-3.15 0-3.5.01-4.74.07-1.14.05-1.76.24-2.17.4-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.16.41-.35 1.03-.4 2.17-.06 1.24-.07 1.59-.07 4.74s.01 3.5.07 4.74c.05 1.14.24 1.76.4 2.17.21.55.47.94.88 1.35.41.41.8.67 1.35.88.41.16 1.03.35 2.17.4 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c1.14-.05 1.76-.24 2.17-.4.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.16-.41.35-1.03.4-2.17.06-1.24.07-1.59.07-4.74s-.01-3.5-.07-4.74c-.05-1.14-.24-1.76-.4-2.17a3.6 3.6 0 0 0-.88-1.35 3.6 3.6 0 0 0-1.35-.88c-.41-.16-1.03-.35-2.17-.4-1.24-.06-1.59-.07-4.74-.07Zm0 2.76a5.7 5.7 0 1 1 0 11.4 5.7 5.7 0 0 1 0-11.4Zm0 1.62a4.08 4.08 0 1 0 0 8.16 4.08 4.08 0 0 0 0-8.16Zm5.88-1.18a1.33 1.33 0 1 1-2.66 0 1.33 1.33 0 0 1 2.66 0Z"/></svg>
+                </a>
+            </div>
+            <div class="copyright">&copy; 2025 蔡宛君醫師 ｜ Dr. Meg's Profile</div>
+        </div>
     </footer>
+
 </body>
 </html>
